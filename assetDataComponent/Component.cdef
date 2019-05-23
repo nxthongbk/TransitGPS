@@ -1,0 +1,14 @@
+requires:
+{
+    api:
+    {
+        positioning/le_posCtrl.api
+        positioning/le_pos.api
+        airVantage/le_avdata.api
+    }
+}
+
+sources:
+{
+    main.c
+}
