@@ -2,9 +2,10 @@ requires:
 {
     api:
     {
+        airVantage/le_avdata.api
+        ${LEGATO_ROOT}/interfaces/wifi/le_wifiAp.api
         positioning/le_posCtrl.api
         positioning/le_pos.api
-        airVantage/le_avdata.api
     }
 }
 

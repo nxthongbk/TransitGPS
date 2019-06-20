@@ -1,4 +1,4 @@
-
+sandboxed: false
 executables:
 {
 	assetData = ( assetDataComponent )
@@ -11,17 +11,20 @@ processes:
 		( assetData )
 	}
 
-	maxCoreDumpFileBytes: 512K
-	maxFileBytes: 512K
+//	maxCoreDumpFileBytes: 512K
+//	maxFileBytes: 512K
+	faultAction: restartApp
 }
 
-start: auto
+
 bindings:
 {
 	assetData.assetDataComponent.le_avdata -> avcService.le_avdata
+	assetData.assetDataComponent.le_wifiAp -> wifiService.le_wifiAp
 	assetData.assetDataComponent.le_posCtrl -> positioningService.le_posCtrl
     assetData.assetDataComponent.le_pos -> positioningService.le_pos
 }
 
 version: 1.0.0
-maxFileSystemBytes: 512K
+//maxFileSystemBytes: 512K
+start: auto
