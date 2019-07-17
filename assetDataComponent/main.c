@@ -10,14 +10,11 @@
 // float - room temperature reading
 #define DEVICE_LOG_READING_VAR_RES "/transit/gps/log"
 
-
 // float - room temperature reading
 #define DEVICE_LAT_READING_VAR_RES "/transit/gps/lat"
 
-
 // float - room temperature reading
 #define DEVICE_ACCURACY_READING_VAR_RES "/transit/gps/accuracy"
-
 
 
 // [AssetDataPath]
@@ -118,7 +115,6 @@ void GetDevicelocation ()
 
 void UpdateLocation(le_timer_Ref_t  timerRef)
 {
-
     GetDevicelocation();
 
     LE_INFO("Device update, %s Log is %d", DeviceNameVar, DeviceLogVar);
@@ -235,7 +231,6 @@ void PushResources(le_timer_Ref_t  timerRef)
     }
 }
 
-
 //-------------------------------------------------------------------------------------------------
 /**
  * Function relevant to AirVantage server connection
@@ -253,8 +248,6 @@ static void sig_appTermination_cbh(int sigNum)
     }
     //Testle_wifiApStop(sigNum);
 }
-
-
 
 //-------------------------------------------------------------------------------------------------
 /**
@@ -274,8 +267,6 @@ static void avcStatusHandler
         	 putenv("PATH=/legato/systems/current/bin:/usr/local/bin:"
         	    	       "/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin");
             LE_INFO("Legato session started successfully");
-//			Testle_wifiApStart();
-//            allow_wifi_connect = 1;
             break;
 
         case LE_AVDATA_SESSION_STOPPED:
@@ -289,11 +280,6 @@ static void avcStatusHandler
     // [StartAVCSession]
 COMPONENT_INIT
 {
-    LE_INFO("Start Legato AssetDataApp");
-
-
-
-
    LE_INFO("Start Legato AssetDataApp");
 
    le_sig_Block(SIGTERM);
@@ -345,8 +331,6 @@ COMPONENT_INIT
    {
 	   LE_ERROR("Error in creating ROOM_TEMP_READING_VAR_RES");
    }
-
-
    // [CreateResources]
    // [AssignValues]
    //setting the variable initial value
