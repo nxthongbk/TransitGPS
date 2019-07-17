@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<LegatoProject:LegatoBinProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:LegatoProject="http://legatoProject.ecore" etpID="[Built-in] Legato for WP76 R13 (19.2.0.wp76xx-native-x86_64-201906171319) - WP76XX">
-  <configurations mbsConfigId="legato.core.af.projectType.exe.debug.1191825544" adefFileName="TransitGPS.adef"/>
-  <configurations mbsConfigId="legato.core.af.projectType.exe.release.2026065254" adefFileName="TransitGPS.adef"/>
-</LegatoProject:LegatoBinProject>
